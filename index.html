@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات مجازی  | ربات تلگرام</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Samim&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Samim', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff6b6b, #cc2b5e);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+           color: rgb(255, 255, 255);
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .main-logo {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background: url('https://imgurl.ir/uploads/f261483_copilot_image_1738263023743.jpeg') center/cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 18px 35px;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+            min-width: 250px;
+            justify-content: center;
+        }
+
+        .telegram-btn {
+            background: linear-gradient(45deg, #0088cc, #00aced);
+        }
+
+        .instagram-btn {
+            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .social-icon {
+            margin-left: 10px;
+            font-size: 1.3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .floating-stickers {
+            position: fixed;
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .sticker {
+            position: absolute;
+            font-size: 40px;
+            animation: float 6s infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); }
+            50% { transform: scale(1); }
+            100% { transform: scale(0.95); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .main-logo {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .service-card {
+                padding: 15px;
+            }
+            
+            .cta-button {
+                width: 100%;
+                min-width: auto;
+                padding: 15px 25px;
+                font-size: 1.1rem;
+            }
+            
+            .buttons-container {
+                flex-direction: column;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-stickers">
+        <div class="sticker" style="left: 5%; top: 10%">🚀</div>
+        <div class="sticker" style="right: 5%; top: 30%">💎</div>
+        <div class="sticker" style="left: 15%; top: 70%">🌨️</div>
+        <div class="sticker" style="right: 10%; top: 80%">❤️</div>
+        <div class="sticker" style="right: 30%; top: 90%">❤️</div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>خدمات مجازی با کمترین قیمت</h1>
+            <h2>ارتقا پیج خود را به ما بسپارید! بهترین خدمات با تضمین کیفیت</h2>
+            
+            <div class="buttons-container">
+                <a href="https://t.me/Erfwp_bot" class="cta-button telegram-btn">
+                    <i class="fab fa-telegram social-icon"></i>
+                    ورود به ربات تلگرام
+                </a>
+                
+                <a href="https://www.instagram.com/erfanalikhani_official?igsh=MW05OHg2cjMxY3Rk" 
+                   class="cta-button instagram-btn"
+                   target="_blank">
+                    <i class="fab fa-instagram social-icon"></i>
+                    پیج اینستاگرام ما
+                </a>
+            </div>
+        </header>
+
+        <div class="main-logo"></div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fab fa-instagram service-icon"></i>
+                <h3>اینستاگرام</h3>
+                <p>افزایش فالوور، لایک، ویو و کامنت واقعی</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fab fa-telegram service-icon"></i>
+                <h3>تلگرام</h3>
+                <p>افزایش ممبر، ویو و تعامل کانال</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fab fa-youtube service-icon"></i>
+                <h3>یوتیوب</h3>
+                <p>افزایش سابسکرایبر، لایک و ویو</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fab fa-tiktok service-icon"></i>
+                <h3>تیک تاک</h3>
+                <p>افزایش فالوور، لایک و ویو واقعی</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add random floating animation
+        document.querySelectorAll('.sticker').forEach((sticker, index) => {
+            sticker.style.animation = `float ${6 + index}s infinite`;
+            sticker.style.animationDelay = `${index * 0.3}s`;
+        });
+
+        // Mobile touch optimization
+        document.querySelectorAll('.cta-button').forEach(btn => {
+            btn.addEventListener('touchstart', () => {
+                btn.style.transform = 'scale(0.95)';
+            });
+            
+            btn.addEventListener('touchend', () => {
+                btn.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
